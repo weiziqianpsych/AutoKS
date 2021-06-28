@@ -5,7 +5,7 @@ An easy-to-used Python package to process knowledge structure data automatically
 - Calculate graph-based features
 - Similarity comparison
 
-## Install
+## Installation
 
 Windows:
 
