@@ -35,10 +35,10 @@ water	beeswax
 ......
 ```
 
-Use `cmap2graph` to load a concept map data in propositions format, and convert it into a `networkx` graph
+Use `cmap2graph` to load a concept map data of propositions format (i.e., pairs), and convert it into a `networkx` graph
 
 ```
-bees_student = ks.cmap2graph('D:/py_project/KS_test/different_formats/bees_student_cmap_en.txt', data_type='pairs')
+bees_student = ks.cmap2graph(filepath='bees_student_cmap_en.txt', data_type='pairs')
 ```
 
 For text data, we can load it from a string object directly
@@ -46,9 +46,9 @@ For text data, we can load it from a string object directly
 The content is too much so I only show you the beginning and the end of this text
 
 ```
-text = "Bees make honey to survive. ......Some of the main sources of nectar are fruit trees, clover and flowering trees. "
+text = "Bees make honey to survive. ......Some of the main sources of nectar are fruit trees, clover and flowering trees."
 
-text_en = text_en.replace('honeycomb', 'hive')  # replace synonym: honeycomb --> hive
+text = text.replace('honeycomb', 'hive')  # replace synonym: honeycomb --> hive
 
 keyterms = ['beeswax', 'sun', 'nectar', 'house bees', 'water', 'distance',
             'hive', 'shake', 'honey', 'abdomen', 'figure 8', 'minerals',
@@ -63,7 +63,7 @@ bees_text = ks.text2graph(text, keyterms, read_from_file=False)
 
 ### Step 2: Do some calculations
 
-For example, we can calculate Tversky's simialrity between graph `bees_student` and `bees_text`, by using funciton`calc_tversky`
+For example, we can calculate the propositional simialrity between graph `bees_student` and `bees_text`, by using funciton`calc_tversky`
 
 ```
 ks.calc_tversky(bees_en, bees_student_en, comparison='propositional', detailed=True)
@@ -71,12 +71,12 @@ ks.calc_tversky(bees_en, bees_student_en, comparison='propositional', detailed=T
 
 ### Step 3: Visualzation
 
-Use funciton `draw_html` to show graph, it would draw graph using `D3.js`, and dispaly by `pywebview`
+Use funciton `draw_html` to show graph, it would draw graph using `D3.js`, and display it by `pywebview`
 
 ```
 ks.draw_html(bees_student)
 ```
 
-results:
+result:
 
 ![alt text](https://github.com/weiziqian1996/autoKS/blob/main/ks_draw_bees_student_en.png)
