@@ -79,7 +79,7 @@ ks.draw_html(bees_student)
 
 result:
 
-![alt text](https://github.com/weiziqian1996/AutoKS/blob/main/example/bees_student_visualizaiton.svg)
+![alt text](https://github.com/weiziqian1996/AutoKS/blob/main/example/bees_student_cmap.svg)
 
 ## Dependencies
 
