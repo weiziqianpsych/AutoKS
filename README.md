@@ -63,13 +63,13 @@ bees_text = ks.text2graph(text, keyterms, read_from_file=False)
 
 ### Step 2: Do some calculations
 
-For example, we can calculate the propositional simialrity between graph `bees_student` and `bees_text`, by using funciton`calc_tversky`
+For example, we can calculate the propositional similarity between graph `bees_student` and `bees_text`, by using funciton`calc_tversky`
 
 ```
 ks.calc_tversky(bees_en, bees_student_en, comparison='propositional', detailed=True)
 ```
 
-### Step 3: Visualzation
+### Step 3: Visualization
 
 Use funciton `draw_html` to show graph, it would draw graph using `D3.js`, and display it by `pywebview`
 
@@ -90,5 +90,3 @@ result:
 `pywebview`: A Python package for building GUI with JavaScript, HTML, and CSS
 
 `d3.js`: A JavaScript library for manipulating documents based on data
-
-`d3-save-svg`: A fork of the nytimes svg-crowbar bookmarklet that extracts SVG nodes and accompanying styles from an HTML document and downloads them as an SVG file
