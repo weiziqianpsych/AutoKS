@@ -79,4 +79,4 @@ ks.draw_html(bees_student)
 
 result:
 
-![alt text](https://github.com/weiziqian1996/autoKS/blob/main/ks_draw_bees_student_en.png)
+![alt text](https://github.com/weiziqian1996/AutoKS/blob/main/example/ks_draw_bees_student_en.png)
