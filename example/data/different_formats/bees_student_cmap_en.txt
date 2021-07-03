@@ -1,0 +1,18 @@
+beeswax	minerals
+bees	figure 8
+nectar	bees
+water	beeswax
+figure 8	sun
+fruit trees	nectar
+shake	distance
+minerals	nectar
+distance	abdomen
+evaporation	nectar
+hive	nectar
+hive	house bees
+figure 8	shake
+water	evaporation
+dry	evaporation
+abdomen	figure 8
+dry	house bees
+honey	house bees

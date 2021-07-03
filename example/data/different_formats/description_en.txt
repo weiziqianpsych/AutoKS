@@ -1,0 +1,14 @@
+skewness	distribution
+normal distribution	distribution
+distribution	description statistics
+variability	description statistics
+variance	variability
+quartile	variability
+median	central tendency
+standard deviation	variability
+mean	central tendency
+range	variability
+kurtosis	distribution
+central tendency	description statistics
+mode	central tendency
+variance	standard deviation
