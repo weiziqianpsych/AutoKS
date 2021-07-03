@@ -80,3 +80,15 @@ ks.draw_html(bees_student)
 result:
 
 ![alt text](https://github.com/weiziqian1996/AutoKS/blob/main/example/ks_draw_bees_student_en.png)
+
+## Dependencies
+
+`networkx`: A Python package for network analysis
+
+`numpy`: A Python package for scientific computing
+
+`pywebview`: A Python package for building GUI with JavaScript, HTML, and CSS
+
+`d3.js`: A JavaScript library for manipulating documents based on data
+
+`d3-save-svg`: A fork of the nytimes svg-crowbar bookmarklet that extracts SVG nodes and accompanying styles from an HTML document and downloads them as an SVG file
