@@ -43,7 +43,7 @@ bees_student = ks.cmap2graph(filepath='bees_student_cmap_en.txt', data_type='pai
 
 For text data, we can load it from a string object directly
 
-The content is too much so I only show you the beginning and the end of this text
+Noted: the content is too much so I only show you the beginning and the end of this text
 
 ```
 text = "Bees make honey to survive. ......Some of the main sources of nectar are fruit trees, clover and flowering trees."
