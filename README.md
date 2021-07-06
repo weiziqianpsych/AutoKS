@@ -79,9 +79,9 @@ Use funciton `draw_html` to show graph, it would draw graph using `D3.js`, and d
 ks.draw_html(bees_student)
 ```
 
-result:
+Result:
 
-![alt text](https://github.com/weiziqian1996/AutoKS/blob/main/example/bees_student_cmap.svg)
+<img src="https://github.com/weiziqian1996/AutoKS/blob/main/example/bees_student_cmap.svg" align="center">
 
 ## Dependencies
 
