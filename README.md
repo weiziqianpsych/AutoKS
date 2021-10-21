@@ -35,7 +35,7 @@ water	beeswax
 ......
 ```
 
-Use `cmap2graph` to load a concept map data of propositions format (i.e., pairs), and convert it into a `networkx` graph
+Use `cmap2graph` to load a concept map data in propositions format (i.e., pairs), and convert it into a `networkx` graph
 
 ```
 bees_student = ks.cmap2graph(filepath='bees_student_cmap_en.txt', data_type='pairs')
