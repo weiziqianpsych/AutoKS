@@ -12,6 +12,8 @@ Welcome to AutoKS's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   
+   about
 
    beginning/index
    base/index
