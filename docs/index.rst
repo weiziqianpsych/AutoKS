@@ -6,6 +6,7 @@
 Welcome to AutoKS's documentation!
 
 这是测试
+testing!
 
 ==================================
 
