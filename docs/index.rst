@@ -14,6 +14,8 @@ testing!
    :maxdepth: 2
    :caption: Contents:
 
+beginging
+base
 
 
 Indices and tables
