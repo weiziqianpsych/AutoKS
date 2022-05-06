@@ -4,6 +4,9 @@
    contain the root `toctree` directive.
 
 Welcome to AutoKS's documentation!
+
+这是测试
+
 ==================================
 
 .. toctree::
