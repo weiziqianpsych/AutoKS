@@ -86,11 +86,17 @@ def cmap2graph(
         # this means a triangle matrix
         # add first row, this is m[0, 0]
         # add elements in each row until the number of elements equal to n
+        print(content)
+        print('len(content[0]) & len(content[-1])', len(content[0]), len(content[-1]))
         if len(content[0]) != len(content[-1]):
+            print('convert it into n*n array')
             content.insert(0, ['0'])
             for i in range(0, len(content)):
                 while len(content[i]) != len(content):
                     content[i].append('')
+
+            print('content', content)
+
             # Step 3-2: add value
             # for each element m[i, j]
             # for each element in the diagonal line
@@ -101,11 +107,26 @@ def cmap2graph(
                         content[i][j] = '0'
                     elif i < j:
                         content[i][j] = content[j][i]
+
+            print('content', content)
+
         # Step 3-3: convert each value from string to int
         array = np.zeros([len(content), len(content)])
+
+        print('len(array)', len(array))
+
+        print('len(content)', len(content))
+
         for i in range(0, len(content)):
             for j in range(0, len(content)):
+
+                # print('content[i][j]', content[i][j])
+
                 array[i, j] = int(content[i][j])
+
+                # print('array', array)
+
+        print('array', array)
 
         # Step 4: calculate PFNet (if necessary)
         if pfnet:

@@ -1,7 +1,7 @@
 # AutoKS
 
 An easy-to-used Python package to process knowledge structure data automatically, including:
-- Convert a variety of forms of data (e.g., concept map, essay/summary) into the graph
+- Convert a variety of forms of data (e.g., concept map, essay/summary) into a graph
 - Calculate graph-based features
 - Similarity comparison
 
@@ -61,7 +61,7 @@ Now we can convert it into a `networkx` graph by using function `text2graph`
 bees_text = ks.text2graph(text, keyterms, read_from_file=False)
 ```
 
-### Step 2: Calculations
+### Step 2: Do some calculations
 
 For example, we can calculate the propositional similarity between graph `bees_student` and `bees_text`, by using funciton`calc_tversky`
 
@@ -74,8 +74,10 @@ ks.calc_tversky(bees_en, bees_student_en, comparison='propositional', detailed=T
 Use function `draw_html` to show graph, it would draw graph using `D3.js`, and display it by `pywebview`
 
 ```
-ks.draw(bees_student)
+ks.draw_html(bees_student)
 ```
+
+result:
 
 ![alt text](https://raw.githubusercontent.com/weiziqian1996/AutoKS/c4ded85259b2e4fe1f6096497237ecb6ad29f528/example/bees_student_cmap.svg?token=AQJFWNM67YCENHNMDVWOTRDA4BYFO)
 

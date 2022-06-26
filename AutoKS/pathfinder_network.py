@@ -26,6 +26,7 @@ def pathfinder_network(G, max, min, r=np.inf):
 
     # get adjacency matrix from a graph
     array = nx.to_numpy_array(G)
+    origin = array.copy()
     nodes = list(G.nodes)
 
     # similarity --> dissimilarity (if necessary)
@@ -33,7 +34,7 @@ def pathfinder_network(G, max, min, r=np.inf):
         array = max - array + min
 
     # the value that out of range would be set as inf
-    array = np.where((array > min) & (array < max), array, np.inf)
+    array = np.where((array > origin.mix()) & (array < origin.max()), array, np.inf)
 
     # pathfinder algorithm
     array = floyd(dis=array, r=r)  # this array is a PFNet

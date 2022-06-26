@@ -28,6 +28,9 @@ def graph2prxfile(
 
         output = None
 
+        if keyterm_list:
+            graph.add_nodes_from(keyterm_list)
+
         if filetype == 'array':
             # convert graph into proximity array
             matrix = (nx.to_numpy_array(

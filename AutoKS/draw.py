@@ -196,7 +196,12 @@ function mouseout() {{
         f.close()
         print(f'Save graph to "{filename}.html" successfully.')
 
-    create_window(title=graph.name,
+    if graph.name:
+        title = graph.name
+    else:
+        title = 'test'
+
+    create_window(title=title,
                   html=html,
                   width=600,
                   height=600,
