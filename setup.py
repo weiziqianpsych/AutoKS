@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 setuptools.setup(
     name="AutoKS",
-    version="0.0.20",
+    version="0.0.27",
     author="Wei Zi-Qian",
     author_email="weiziqian1996@163.com",
     description="An easy-to-used Python package to process knowledge structure data automatically",
